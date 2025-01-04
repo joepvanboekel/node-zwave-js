@@ -22,8 +22,8 @@
 	"endpoints": [
 		{
 		"type": "Routing End Node",
-		"generic": 0x20,
-		"specific": 0x01
+		"generic": 32,
+		"specific": 1
 		}
 	],
 	"associations": {
@@ -41,46 +41,46 @@
 	"commandClasses": {
 		"add": [
 			{
-				"id": 0x30,
+				"id": 48,
 				"name": "Binary Sensor"
 			},
 			{
-				"id": 0x31,
+				"id": 49,
 				"name": "Multilevel Sensor",
 				"version": 11,
 				"description": "Supports PM2.5, temperature, humidity, CO2, and illuminance monitoring"
 			},
 			{
-				"id": 0x33,
+				"id": 51,
 				"name": "Color Switch",
 				"description": "Controls RGB light settings"
 			},
 			{
-				"id": 0x71,
+				"id": 113,
 				"name": "Notification",
 				"description": "Reports air quality status and power events"
 			},
 			{
-				"id": 0x85,
+				"id": 133,
 				"name": "Association",
 				"version": 2
 			},
 			{
-				"id": 0x86,
+				"id": 134,
 				"name": "Version",
 				"version": 3
 			},
 			{
-				"id": 0x90,
+				"id": 144,
 				"name": "Device Reset Locally"
 			},
 			{
-				"id": 0x70,
+				"id": 112,
 				"name": "Configuration",
 				"description": "Allows user-configurable parameters"
 			},
 			{
-				"id": 0x8E,
+				"id": 142,
 				"name": "Multi Channel Association",
 				"version": 3
 			}
@@ -117,14 +117,13 @@
 				"Temperature (2700K, 5000K)"
 			]
 		}
-	}
+	},
 	"metadata": {
 		"inclusion": "1. Plug in the AC Power adapter, connect to the DC Jack on the Air Quality Sensor to power up.\n2. Put the Z-Wave Gateway or Control Panel into inclusion mode (please refer to the Z-Wave Gateway or Control Panel manual).\n3. Within 1 second, press the Function Button 3 times.",
 		"exclusion": "The Air Quality Sensor must be removed from existing Z-Wave network before being included into another. \n1. Put the Z-Wave gateway or control panel into Exclusion mode (please refer to the Z-Wave gateway or control panel manual).\n2. Within 1 second, press the Function Button 3 times and the device will be removed from the Z-Wave network.",
 		"reset": "(Only use factory reset when network Control Panel/Gateway is missing or inoperable).\nPress and hold the Function Button for 10 seconds to perform factory reset."
 	},
 	"compat": {
-		// The device reports in a different scale than it reports support for
 		"disableStrictMeasurementValidation": true,
 		"commandClasses": {
 				"add": {
