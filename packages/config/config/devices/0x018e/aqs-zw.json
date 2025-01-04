@@ -19,13 +19,13 @@
 		"min": "0.0",
 		"max": "255.255"
 	},
-	"endpoints": [
-		{
+	"endpoints": {
+		"0": {
 		"type": "Routing End Node",
 		"generic": 32,
 		"specific": 1
 		}
-	],
+	},
 	"associations": {
 		"1": {
 			"label": "Lifeline",
@@ -38,54 +38,52 @@
 	"zwavePlusVersion": 2,
 	"zwavePlusNodeType": 0,
 	"zwavePlusRoleType": 5,
-	"commandClasses": {
-		"add": [
-			{
-				"id": 48,
-				"name": "Binary Sensor"
-			},
-			{
-				"id": 49,
-				"name": "Multilevel Sensor",
-				"version": 11,
-				"description": "Supports PM2.5, temperature, humidity, CO2, and illuminance monitoring"
-			},
-			{
-				"id": 51,
-				"name": "Color Switch",
-				"description": "Controls RGB light settings"
-			},
-			{
-				"id": 113,
-				"name": "Notification",
-				"description": "Reports air quality status and power events"
-			},
-			{
-				"id": 133,
-				"name": "Association",
-				"version": 2
-			},
-			{
-				"id": 134,
-				"name": "Version",
-				"version": 3
-			},
-			{
-				"id": 144,
-				"name": "Device Reset Locally"
-			},
-			{
-				"id": 112,
-				"name": "Configuration",
-				"description": "Allows user-configurable parameters"
-			},
-			{
-				"id": 142,
-				"name": "Multi Channel Association",
-				"version": 3
-			}
-		]
-	},
+	"commandClasses": [
+		{
+			"id": 48,
+			"name": "Binary Sensor"
+		},
+		{
+			"id": 49,
+			"name": "Multilevel Sensor",
+			"version": 11,
+			"description": "Supports PM2.5, temperature, humidity, CO2, and illuminance monitoring"
+		},
+		{
+			"id": 51,
+			"name": "Color Switch",
+			"description": "Controls RGB light settings"
+		},
+		{
+			"id": 113,
+			"name": "Notification",
+			"description": "Reports air quality status and power events"
+		},
+		{
+			"id": 133,
+			"name": "Association",
+			"version": 2
+		},
+		{
+			"id": 134,
+			"name": "Version",
+			"version": 3
+		},
+		{
+			"id": 144,
+			"name": "Device Reset Locally"
+		},
+		{
+			"id": 112,
+			"name": "Configuration",
+			"description": "Allows user-configurable parameters"
+		},
+		{
+			"id": 142,
+			"name": "Multi Channel Association",
+			"version": 3
+		}
+	],
 	"features": {
 		"PM2.5": {
 			"range": "0 to 500 μg/m3",
