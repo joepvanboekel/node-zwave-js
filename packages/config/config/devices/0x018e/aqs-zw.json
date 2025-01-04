@@ -1,0 +1,139 @@
+{
+	"manufacturer": "Climax Technology, Ltd.",
+	"manufacturerId": "0x018e",
+	"label": "AQS-ZW Series",
+	"description": "Z-Wave Air Quality Sensor with PM2.5, temperature, humidity, illuminance, and CO2 (optional) monitoring",
+	"devices": [
+		{
+			"productType": "0x0004",
+			"productId": "0x0020",
+			"label": "AQS-ZW"
+		},
+		{
+			"productType": "0x0004",
+			"productId": "0x0031",
+			"label": "AQS-3ZW"
+		}
+	],
+	"firmwareVersion": {
+		"min": "0.0",
+		"max": "255.255"
+	},
+	"endpoints": [
+		{
+		"type": "Routing End Node",
+		"generic": 0x20,
+		"specific": 0x01
+		}
+	],
+	"associations": {
+		"1": {
+			"label": "Lifeline",
+			"maxNodes": 5,
+			"isLifeline": true,
+			"description": "Reports sensor data and status"
+		}
+	},
+	"supportsZWavePlus": true,
+	"zwavePlusVersion": 2,
+	"zwavePlusNodeType": 0,
+	"zwavePlusRoleType": 5,
+	"commandClasses": {
+		"add": [
+			{
+				"id": 0x30,
+				"name": "Binary Sensor"
+			},
+			{
+				"id": 0x31,
+				"name": "Multilevel Sensor",
+				"version": 11,
+				"description": "Supports PM2.5, temperature, humidity, CO2, and illuminance monitoring"
+			},
+			{
+				"id": 0x33,
+				"name": "Color Switch",
+				"description": "Controls RGB light settings"
+			},
+			{
+				"id": 0x71,
+				"name": "Notification",
+				"description": "Reports air quality status and power events"
+			},
+			{
+				"id": 0x85,
+				"name": "Association",
+				"version": 2
+			},
+			{
+				"id": 0x86,
+				"name": "Version",
+				"version": 3
+			},
+			{
+				"id": 0x90,
+				"name": "Device Reset Locally"
+			},
+			{
+				"id": 0x70,
+				"name": "Configuration",
+				"description": "Allows user-configurable parameters"
+			},
+			{
+				"id": 0x8E,
+				"name": "Multi Channel Association",
+				"version": 3
+			}
+		]
+	},
+	"features": {
+		"PM2.5": {
+			"range": "0 to 500 μg/m3",
+			"reportingInterval": "30 minutes or upon change of +/- 6 μg/m3"
+		},
+		"Temperature": {
+			"range": "-10°C to 50°C",
+			"reportingInterval": "30 minutes or upon change of +/- 2°C"
+		},
+		"Humidity": {
+			"range": "0% to 95% RH",
+			"reportingInterval": "30 minutes or upon change of 10%"
+		},
+		"CO2": {
+			"range": "0 to 2000 ppm",
+			"threshold": "1000 ppm for alerts",
+			"reportingInterval": "30 minutes or upon change of +/- 100 ppm (AQS-3 model only)"
+		},
+		"RGB Light": {
+			"settings": "Adjustable via Z-Wave or local button",
+			"colors": [
+				"Red",
+				"Green",
+				"Blue",
+				"Orange",
+				"Yellow",
+				"Indigo",
+				"Violet",
+				"Temperature (2700K, 5000K)"
+			]
+		}
+	}
+	"metadata": {
+		"inclusion": "1. Plug in the AC Power adapter, connect to the DC Jack on the Air Quality Sensor to power up.\n2. Put the Z-Wave Gateway or Control Panel into inclusion mode (please refer to the Z-Wave Gateway or Control Panel manual).\n3. Within 1 second, press the Function Button 3 times.",
+		"exclusion": "The Air Quality Sensor must be removed from existing Z-Wave network before being included into another. \n1. Put the Z-Wave gateway or control panel into Exclusion mode (please refer to the Z-Wave gateway or control panel manual).\n2. Within 1 second, press the Function Button 3 times and the device will be removed from the Z-Wave network.",
+		"reset": "(Only use factory reset when network Control Panel/Gateway is missing or inoperable).\nPress and hold the Function Button for 10 seconds to perform factory reset."
+	},
+	"compat": {
+		// The device reports in a different scale than it reports support for
+		"disableStrictMeasurementValidation": true,
+		"commandClasses": {
+				"add": {
+					"Basic": {
+						"version": 1,
+						"isSupported": true
+					}
+				}
+			}
+	}
+}
+
