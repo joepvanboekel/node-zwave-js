@@ -44,17 +44,17 @@
 			"maxValue": 8,
 			"defaultValue": 0,
 			"unsigned": true,
-			"options": {
-			"0": "2700K",
-			"1": "5000K",
-			"2": "Red",
-			"3": "Orange",
-			"4": "Yellow",
-			"5": "Green",
-			"6": "Blue",
-			"7": "Indigo",
-			"8": "Violet"
-			}
+			"options": [
+				{ "value": 0, "label": "2700K" },
+				{ "value": 1, "label": "5000K" },
+				{ "value": 2, "label": "Red" },
+				{ "value": 3, "label": "Orange" },
+				{ "value": 4, "label": "Yellow" },
+				{ "value": 5, "label": "Green" },
+				{ "value": 6, "label": "Blue" },
+				{ "value": 7, "label": "Indigo" },
+				{ "value": 8, "label": "Violet" }
+			]
 		},
 		{
 			"#": "2",
