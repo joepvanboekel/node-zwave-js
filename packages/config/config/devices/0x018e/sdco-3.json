@@ -5,7 +5,7 @@
 	"description": "Smoke and Carbon Monoxide Detector",
 	"devices": [
 		{
-			"productType": "0x0003",
+			"productType": "0x0004",
 			"productId": "0x0115"
 		}
 	],
