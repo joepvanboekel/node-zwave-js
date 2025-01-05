@@ -13,6 +13,23 @@
 		"min": "0.0",
 		"max": "255.255"
 	},
+	"paramInformation": [
+		{
+			"#": "1",
+			"label": "Smoke Alarm Sensitivity",
+			"description": "Adjusts the sensitivity level of the smoke detector.",
+			"valueSize": 1,
+			"minValue": 1,
+			"maxValue": 3,
+			"defaultValue": 2,
+			"unsigned": true,
+			"options": [
+				{ "value": 1, "label": "High" },
+				{ "value": 2, "label": "Medium" },
+				{ "value": 3, "label": "Low" }
+			]
+		}
+	],
 	"metadata": {
 		"inclusion": "1. Press down on the red tab and insert three new batteries into the compartment. The red tab needs to be in horizontal position underneath the batteries. This is to prevent users from using the SDCO without inserting batteries.\n2. Replace the battery compartment cover and turn the SDCO over. You will hear “Welcome, Smoke Alarm and Carbon Monoxide Detector”, indicating it is ready for further setup (for serial connected models only).\n3. The SDCO allows users to set up a location prompt for an area, to view the full list of locations and setup instructions, please refer to “Voice Prompt” Section for details. It is recommended to perform warm-up and calibration process before including your device into the Z-Wave coordinator.\n\n<Including to the Z-Wave coordinator>\n1. Put the Z-Wave gateway or control panel into Inclusion mode (please refer to the Z-Wave gateway or control panel manual).\n2. Within 1.5 seconds, press the button 3 times. The SDCO will emit a 2-tone beep.\n3. Refer to the operation manual of the Z-Wave gateway or control panel to complete the inclusion process.\n4. If the sensor has already been included into another Z-Wave Gateway/Control Panel, or if the sensor is unable to be included into the current Z-Wave Gateway/Control Panel, please exclude it first (see Exclusion) before attempting to include it into the current Z-Wave Gateway/Control Panel.",
 		"exclusion": "The SDCO must be removed from existing Z-Wave network before being included into another. \n1. Put the Z-Wave gateway or control panel into Exclusion mode (please refer to the Z-Wave gateway or control panel manual).\n2. Within 1.5 seconds, press the button 3 times and the SDCO will be removed from the Z-Wave network.",
