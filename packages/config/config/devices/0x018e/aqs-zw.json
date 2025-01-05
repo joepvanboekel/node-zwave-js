@@ -34,6 +34,69 @@
 			"description": "Reports sensor data and status"
 		}
 	},
+	"paramInformation": [
+		{
+			"#": "1",
+			"label": "RGB Light Color",
+			"description": "Sets the RGB light color for the device.",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 8,
+			"defaultValue": 0,
+			"unsigned": true,
+			"options": {
+			"0": "2700K",
+			"1": "5000K",
+			"2": "Red",
+			"3": "Orange",
+			"4": "Yellow",
+			"5": "Green",
+			"6": "Blue",
+			"7": "Indigo",
+			"8": "Violet"
+			}
+		},
+		{
+			"#": "2",
+			"label": "PM2.5 Reporting Threshold",
+			"description": "Sets the reporting threshold for PM2.5 levels in μg/m3.",
+			"valueSize": 1,
+			"minValue": 1,
+			"maxValue": 10,
+			"defaultValue": 6,
+			"unsigned": true
+		},
+		{
+			"#": "3",
+			"label": "Temperature Reporting Threshold",
+			"description": "Sets the reporting threshold for temperature changes in °C.",
+			"valueSize": 1,
+			"minValue": 1,
+			"maxValue": 5,
+			"defaultValue": 2,
+			"unsigned": true
+		},
+		{
+			"#": "4",
+			"label": "Humidity Reporting Threshold",
+			"description": "Sets the reporting threshold for humidity changes in percentage.",
+			"valueSize": 1,
+			"minValue": 5,
+			"maxValue": 20,
+			"defaultValue": 10,
+			"unsigned": true
+		},
+		{
+			"#": "5",
+			"label": "CO2 Reporting Threshold",
+			"description": "Sets the reporting threshold for CO2 concentration changes in ppm.",
+			"valueSize": 2,
+			"minValue": 50,
+			"maxValue": 500,
+			"defaultValue": 100,
+			"unsigned": true
+		}
+	],
 	"supportsZWavePlus": true,
 	"zwavePlusVersion": 2,
 	"zwavePlusNodeType": 0,
@@ -53,63 +116,6 @@
 			"id": 51,
 			"name": "Color Switch",
 			"description": "Controls RGB light settings"
-		},
-		{
-			"id": 112,
-			"name": "Configuration",
-			"parameters": {
-				"1": {
-					"label": "RGB Light Color",
-					"description": "Sets the RGB light color.",
-					"valueSize": 1,
-					"minValue": 0,
-					"maxValue": 8,
-					"defaultValue": 0,
-					"options": {
-						"0": "2700K",
-						"1": "5000K",
-						"2": "Red",
-						"3": "Orange",
-						"4": "Yellow",
-						"5": "Green",
-						"6": "Blue",
-						"7": "Indigo",
-						"8": "Violet"
-					}
-				},
-				"2": {
-					"label": "PM2.5 Reporting Threshold",
-					"description": "Sets the reporting threshold for PM2.5 levels (in μg/m3).",
-					"valueSize": 1,
-					"minValue": 1,
-					"maxValue": 10,
-					"defaultValue": 6
-				},
-				"3": {
-					"label": "Temperature Reporting Threshold",
-					"description": "Sets the reporting threshold for temperature changes (in °C).",
-					"valueSize": 1,
-					"minValue": 1,
-					"maxValue": 5,
-					"defaultValue": 2
-				},
-				"4": {
-					"label": "Humidity Reporting Threshold",
-					"description": "Sets the reporting threshold for humidity changes (in %).",
-					"valueSize": 1,
-					"minValue": 5,
-					"maxValue": 20,
-					"defaultValue": 10
-				},
-				"5": {
-					"label": "CO2 Reporting Threshold",
-					"description": "Sets the reporting threshold for CO2 concentration changes (in ppm).",
-					"valueSize": 2,
-					"minValue": 50,
-					"maxValue": 500,
-					"defaultValue": 100
-				}
-			}
 		},
 		{
 			"id": 113,
@@ -179,15 +185,7 @@
 		"reset": "(Only use factory reset when network Control Panel/Gateway is missing or inoperable).\nPress and hold the Function Button for 10 seconds to perform factory reset."
 	},
 	"compat": {
-		"disableStrictMeasurementValidation": true,
-		"commandClasses": {
-				"add": {
-					"Basic": {
-						"version": 1,
-						"isSupported": true
-					}
-				}
-			}
+		"disableStrictMeasurementValidation": true
 	}
 }
 
