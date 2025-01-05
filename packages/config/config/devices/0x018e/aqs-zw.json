@@ -40,6 +40,7 @@
 			"label": "RGB Light Color",
 			"description": "Sets the RGB light color for the device.",
 			"valueSize": 1,
+			"allowManualEntry": false,
 			"defaultValue": 0,
 			"options": [
 				{ "value": 0, "label": "2700K" },
