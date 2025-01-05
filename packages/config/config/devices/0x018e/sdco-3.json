@@ -42,7 +42,7 @@
 			"minValue": 0,
 			"maxValue": 255,
 			"defaultValue": 0,
-			"readonly": true
+			"readOnly": true
 		}
 	],
 	"metadata": {
