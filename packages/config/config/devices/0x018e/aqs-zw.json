@@ -19,13 +19,6 @@
 		"min": "0.0",
 		"max": "255.255"
 	},
-	"endpoints": {
-		"0": {
-		"type": "Routing End Node",
-		"generic": 32,
-		"specific": 1
-		}
-	},
 	"associations": {
 		"1": {
 			"label": "Lifeline",
@@ -34,67 +27,6 @@
 			"description": "Reports sensor data and status"
 		}
 	},
-	"paramInformation": [
-		{
-			"#": "1",
-			"label": "RGB Light Color",
-			"description": "Sets the RGB light color for the device.",
-			"valueSize": 1,
-			"allowManualEntry": false,
-			"defaultValue": 0,
-			"options": [
-				{ "value": 0, "label": "2700K" },
-				{ "value": 1, "label": "5000K" },
-				{ "value": 2, "label": "Red" },
-				{ "value": 3, "label": "Orange" },
-				{ "value": 4, "label": "Yellow" },
-				{ "value": 5, "label": "Green" },
-				{ "value": 6, "label": "Blue" },
-				{ "value": 7, "label": "Indigo" },
-				{ "value": 8, "label": "Violet" }
-			]
-		},
-		{
-			"#": "2",
-			"label": "PM2.5 Reporting Threshold",
-			"description": "Sets the reporting threshold for PM2.5 levels in μg/m3.",
-			"valueSize": 1,
-			"minValue": 1,
-			"maxValue": 10,
-			"defaultValue": 6
-		},
-		{
-			"#": "3",
-			"label": "Temperature Reporting Threshold",
-			"description": "Sets the reporting threshold for temperature changes in °C.",
-			"valueSize": 1,
-			"minValue": 1,
-			"maxValue": 5,
-			"defaultValue": 2
-		},
-		{
-			"#": "4",
-			"label": "Humidity Reporting Threshold",
-			"description": "Sets the reporting threshold for humidity changes in percentage.",
-			"valueSize": 1,
-			"minValue": 5,
-			"maxValue": 20,
-			"defaultValue": 10
-		},
-		{
-			"#": "5",
-			"label": "CO2 Reporting Threshold",
-			"description": "Sets the reporting threshold for CO2 concentration changes in ppm.",
-			"valueSize": 2,
-			"minValue": 50,
-			"maxValue": 500,
-			"defaultValue": 100
-		}
-	],
-	"supportsZWavePlus": true,
-	"zwavePlusVersion": 2,
-	"zwavePlusNodeType": 0,
-	"zwavePlusRoleType": 5,
 	"metadata": {
 		"inclusion": "1. Plug in the AC Power adapter, connect to the DC Jack on the Air Quality Sensor to power up.\n2. Put the Z-Wave Gateway or Control Panel into inclusion mode (please refer to the Z-Wave Gateway or Control Panel manual).\n3. Within 1 second, press the Function Button 3 times.",
 		"exclusion": "The Air Quality Sensor must be removed from existing Z-Wave network before being included into another. \n1. Put the Z-Wave gateway or control panel into Exclusion mode (please refer to the Z-Wave gateway or control panel manual).\n2. Within 1 second, press the Function Button 3 times and the device will be removed from the Z-Wave network.",
