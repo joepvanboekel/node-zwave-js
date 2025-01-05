@@ -40,10 +40,7 @@
 			"label": "RGB Light Color",
 			"description": "Sets the RGB light color for the device.",
 			"valueSize": 1,
-			"minValue": 0,
-			"maxValue": 8,
 			"defaultValue": 0,
-			"unsigned": true,
 			"options": [
 				{ "value": 0, "label": "2700K" },
 				{ "value": 1, "label": "5000K" },
@@ -63,8 +60,7 @@
 			"valueSize": 1,
 			"minValue": 1,
 			"maxValue": 10,
-			"defaultValue": 6,
-			"unsigned": true
+			"defaultValue": 6
 		},
 		{
 			"#": "3",
@@ -73,8 +69,7 @@
 			"valueSize": 1,
 			"minValue": 1,
 			"maxValue": 5,
-			"defaultValue": 2,
-			"unsigned": true
+			"defaultValue": 2
 		},
 		{
 			"#": "4",
@@ -83,8 +78,7 @@
 			"valueSize": 1,
 			"minValue": 5,
 			"maxValue": 20,
-			"defaultValue": 10,
-			"unsigned": true
+			"defaultValue": 10
 		},
 		{
 			"#": "5",
@@ -93,8 +87,7 @@
 			"valueSize": 2,
 			"minValue": 50,
 			"maxValue": 500,
-			"defaultValue": 100,
-			"unsigned": true
+			"defaultValue": 100
 		}
 	],
 	"supportsZWavePlus": true,
