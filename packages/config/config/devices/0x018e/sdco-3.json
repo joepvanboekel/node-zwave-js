@@ -17,17 +17,32 @@
 		{
 			"#": "1",
 			"label": "Smoke Alarm Sensitivity",
-			"description": "Adjusts the sensitivity level of the smoke detector.",
+			"description": "Adjusts the sensitivity level of the smoke detector. 1 is highest",
 			"valueSize": 1,
 			"minValue": 1,
-			"maxValue": 3,
-			"defaultValue": 2,
-			"unsigned": true,
-			"options": [
-				{ "value": 1, "label": "High" },
-				{ "value": 2, "label": "Medium" },
-				{ "value": 3, "label": "Low" }
-			]
+			"maxValue": 8,
+			"defaultValue": 4,
+			"unsigned": true
+		},
+		{
+			"#": "2",
+			"label": "Verification Period",
+			"description": "Sets the time period (in seconds) for verifying the presence of carbon monoxide before triggering an alarm.",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 30,
+			"unsigned": true
+		},
+		{
+			"#": "3",
+			"label": "SD Hardware Version",
+			"description": "Indicates the hardware version of the smoke detector (read-only).",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 0,
+			"readonly": true
 		}
 	],
 	"metadata": {
