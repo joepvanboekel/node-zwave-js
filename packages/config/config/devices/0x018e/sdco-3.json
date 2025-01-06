@@ -44,7 +44,7 @@
 			"defaultValue": 0,
 			"readOnly": true
 		},
-		 {
+		{
 			"#": "4",
 			"label": "Temperature Threshold",
 			"description": "4~50 (2~25 degrees)",
@@ -67,8 +67,7 @@
 			"label": "Location",
 			"description": "Location English Prompt",
 			"valueSize": 1,
-			"minValue": 0,
-			"maxValue": 20,
+			"allowManualEntry": false,
 			"defaultValue": 20,
 			"options": [
 				{ "value": 0, "label": "Basement" },
