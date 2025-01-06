@@ -65,10 +65,8 @@
 		{
 			"#": "6",
 			"label": "Location",
-			"description": "abcd Location English Prompt",
+			"description": "Location English Prompt",
 			"valueSize": 1,
-			"minValue": 0,
-			"maxValue": 20,
 			"allowManualEntry": false,
 			"defaultValue": 20,
 			"options": [
@@ -127,9 +125,8 @@
 			"label": "Temporary Snooze",
 			"description": "",
 			"valueSize": 1,
-			"minValue": 0,
-			"maxValue": 7,
 			"defaultValue": 0,
+			"allowManualEntry": false,
 			"options": [
 				{ "value": 0, "label": "Disable (the timer will be stopped immediately)" },
 				{ "value": 1, "label": "5 minutes" },
@@ -146,8 +143,7 @@
 			"label": "Language",
 			"description": "",
 			"valueSize": 1,
-			"minValue": 1,
-			"maxValue": 5,
+			"allowManualEntry": false,
 			"defaultValue": 1,
 			"options": [
 				{ "label": "English", "value": 1 },
