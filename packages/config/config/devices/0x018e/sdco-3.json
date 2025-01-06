@@ -65,7 +65,7 @@
 		{
 			"#": "6",
 			"label": "Location",
-			"description": "Location English Prompt",
+			"description": "abcd Location English Prompt",
 			"valueSize": 1,
 			"allowManualEntry": false,
 			"defaultValue": 20,
@@ -148,11 +148,11 @@
 			"maxValue": 5,
 			"defaultValue": 1,
 			"options": [
-				{ "value": 1, "label": "English" },
-				{ "value": 2, "label": "Norwegian" },
-				{ "value": 3, "label": "Swedish" },
-				{ "value": 4, "label": "Finnish" },
-				{ "value": 5, "label": "Danish" }
+				{ "label": "English", "value": 1 },
+				{ "label": "Norwegian", "value": 2 },
+				{ "label": "Swedish", "value": 3 },
+				{ "label": "Finnish", "value": 4 },
+				{ "label": "Danish", "value": 5  }
 			]
 		}
 	],
