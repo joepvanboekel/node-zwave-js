@@ -97,6 +97,7 @@
 			"#": "7",
 			"label": "Adjust Temperature",
 			"description": "(0.1 degree for each value)",
+			"unit": "0.1 °(C)",
 			"valueSize": 1,
 			"minValue": -127,
 			"maxValue": 128,
@@ -107,6 +108,7 @@
 			"label": "Adjust Humidity",
 			"description": "(1% for each value)",
 			"valueSize": 1,
+			"unit": "%",
 			"minValue": -127,
 			"maxValue": 128,
 			"defaultValue": 0
