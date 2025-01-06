@@ -67,6 +67,8 @@
 			"label": "Location",
 			"description": "abcd Location English Prompt",
 			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 20,
 			"allowManualEntry": false,
 			"defaultValue": 20,
 			"options": [
