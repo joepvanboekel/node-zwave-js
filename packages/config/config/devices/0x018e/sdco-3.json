@@ -43,6 +43,118 @@
 			"maxValue": 255,
 			"defaultValue": 0,
 			"readOnly": true
+		},
+		 {
+			"#": "4",
+			"label": "Temperature Threshold",
+			"description": "4~50 (2~25 degrees)",
+			"valueSize": 1,
+			"minValue": 4,
+			"maxValue": 50,
+			"defaultValue": 4
+		},
+		{
+			"#": "5",
+			"label": "Auto Report Time",
+			"description": "0~240 minutes",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 240,
+			"defaultValue": 30
+		},
+		{
+			"#": "6",
+			"label": "Location",
+			"description": "Location English Prompt",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 20,
+			"defaultValue": 20,
+			"options": [
+				{ "value": 0, "label": "Basement" },
+				{ "value": 1, "label": "Hall" },
+				{ "value": 2, "label": "Office" },
+				{ "value": 3, "label": "Master Bedroom" },
+				{ "value": 4, "label": "Bedroom" },
+				{ "value": 5, "label": "Guest Bedroom" },
+				{ "value": 6, "label": "Kitchen" },
+				{ "value": 7, "label": "Dining Room" },
+				{ "value": 8, "label": "Living Room" },
+				{ "value": 9, "label": "Laundry" },
+				{ "value": 10, "label": "Attic" },
+				{ "value": 11, "label": "Nursery" },
+				{ "value": 12, "label": "Toilet" },
+				{ "value": 13, "label": "Technical room" },
+				{ "value": 14, "label": "Wardrobe" },
+				{ "value": 15, "label": "Attic living room" },
+				{ "value": 16, "label": "Basement Living Room" },
+				{ "value": 17, "label": "Staircase" },
+				{ "value": 18, "label": "Garage" },
+				{ "value": 19, "label": "Rental Apartment" },
+				{ "value": 20, "label": "No Location" }
+			]
+		},
+		{
+			"#": "7",
+			"label": "Adjust Temperature",
+			"description": "(0.1 degree for each value)",
+			"valueSize": 1,
+			"minValue": -127,
+			"maxValue": 128,
+			"defaultValue": 0
+		},
+		{
+			"#": "8",
+			"label": "Adjust Humidity",
+			"description": "(1% for each value)",
+			"valueSize": 1,
+			"minValue": -127,
+			"maxValue": 128,
+			"defaultValue": 0
+		},
+		{
+			"#": "9",
+			"label": "Hardware Fault",
+			"description": "please refer to Table 4 in manual",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 255,
+			"defaultValue": 0
+		},
+		{
+			"#": "10",
+			"label": "Temporary Snooze",
+			"description": "",
+			"valueSize": 1,
+			"minValue": 0,
+			"maxValue": 7,
+			"defaultValue": 0,
+			"options": [
+				{ "value": 0, "label": "Disable (the timer will be stopped immediately)" },
+				{ "value": 1, "label": "5 minutes" },
+				{ "value": 2, "label": "30 minutes" },
+				{ "value": 3, "label": "60 minutes" },
+				{ "value": 4, "label": "8 hours" },
+				{ "value": 5, "label": "12 hours" },
+				{ "value": 6, "label": "24 hours" },
+				{ "value": 7, "label": "36 hours" }
+			]
+		},
+		{
+			"#": "11",
+			"label": "Language",
+			"description": "",
+			"valueSize": 1,
+			"minValue": 1,
+			"maxValue": 5,
+			"defaultValue": 1,
+			"options": [
+				{ "value": 1, "label": "English" },
+				{ "value": 2, "label": "Norwegian" },
+				{ "value": 3, "label": "Swedish" },
+				{ "value": 4, "label": "Finnish" },
+				{ "value": 5, "label": "Danish" }
+			]
 		}
 	],
 	"metadata": {
